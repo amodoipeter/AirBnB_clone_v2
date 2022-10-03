@@ -2,7 +2,7 @@
 """
     Fabric script to automate deployment of web_static directory
 """
-from fabric import run, put, local, env
+from fabric.api import run, put, local, env
 from datetime import datetime
 import os.path
 
