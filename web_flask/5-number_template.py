@@ -38,12 +38,11 @@ def number(n):
 
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
-def number_template(n):
-    """
-        Flask route at /number_template/<n>.
-        Displays the 5-number.html template wiht value of <n>.
-    """
-    return render_template('5-number.html', number=n)
+def var_num_template(n):
+        """
+            function to display number in html page
+        """
+        return render_template("5-number.html", n=n)
 
 
 if __name__ == '__main__':
